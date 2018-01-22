@@ -45,7 +45,7 @@ This package will allow you to support both Render Props and Component Injection
 What does this package offer over doing the work yourself?
 
 If you support Component Injection, this package will check to see if the component
-is a Stateless Functional Component (SFC) and if so, will call it directly
+is a Stateless Functional Component (SFC) and, if so, will call it directly
 for improved performance.
 
 Another benefit is that Render Props can now have `defaultProps`. 
@@ -124,9 +124,9 @@ const App = () => (
 
 This will work no matter what you pass in the `render` prop.
 You can pass a function, a Stateless Functional Component (SFC), or a class component.
-In any case, if will be called to do the rendering.
+In any case, it will be called to do the rendering.
 
-Plus, if you pass a SFC, if will be rendered by calling it directly.
+Plus, if you pass a SFC, it will be rendered by calling it directly.
 This is a huge performance boost over using JSX/`React.createElement`.
 
 This helper will also merge in any `defaultProps` that your component might be using.
