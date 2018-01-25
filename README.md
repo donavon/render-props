@@ -6,9 +6,9 @@
 TL;DR
 
 * This package is for component authors.
-* It allows you to easily and reliably use either a Render Prop or Component Injection.
-* Get increased performance from your SFCs.
-* Respects the component's `defaultProps`.
+* It allows you to easily and reliably support Render Props, Component Injection, AND Function as a Child.
+* Get increased performance from your SFCs while
+respecting the component's `defaultProps`.
 
 ## Install
 ```bash
@@ -130,6 +130,21 @@ Plus, if you pass a SFC, it will be rendered by calling it directly.
 This is a huge performance boost over using JSX/`React.createElement`.
 
 This helper will also merge in any `defaultProps` that your component might be using.
+
+## Support Function as a Child too!
+
+If you would also like to support Function as a Child
+you can change the example code above like this.
+
+```js
+render() {
+  const { children, render = children } = this.props;
+  return renderProps(render, this.state);
+}
+```
+
+It's good to note that I [appall this pattern](http://americanexpress.io/faccs-are-an-antipattern/)
+but I've shown the example for completeness.
 
 ## See it Live!
 
