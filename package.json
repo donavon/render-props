@@ -1,6 +1,6 @@
 {
   "name": "render-props",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easily and reliably support Render Props, Component Injection, and Function as a Child",
   "author": "Donavon West <github@donavon.com> (http://donavon.com)",
   "main": "lib/index.js",
