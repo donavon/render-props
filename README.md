@@ -129,6 +129,9 @@ In any case, it will be called to do the rendering.
 Plus, if you pass a SFC, it will be rendered by calling it directly.
 This is a huge performance boost over using JSX/`React.createElement`.
 
+_[Note: Starting with version 1.1.0, SFCs that specify `propTypes` will be rendered as Components
+in order to take advantage of prop validation.]_
+
 This helper will also merge in any `defaultProps` that your component might be using.
 
 ## Support Function as a Child too!
